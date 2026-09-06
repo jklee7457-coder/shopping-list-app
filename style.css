@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, "Segoe UI", Arial, sans-serif;
+  background: #f5f5f7;
+  margin: 0;
+  padding: 40px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 22px;
+  text-align: center;
+}
+
+#add-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#item-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+#add-form button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #3478f6;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#add-form button:hover {
+  background: #275bc4;
+}
+
+#item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#item-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+#item-list li:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  flex: 1;
+  font-size: 15px;
+}
+
+.item-checked .item-name {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.delete-btn {
+  border: none;
+  background: none;
+  color: #e05555;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.delete-btn:hover {
+  color: #b53030;
+}
+
+.empty-message {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+.empty-message.hidden {
+  display: none;
+}
